@@ -5,7 +5,7 @@ This project aims to build a simple URL Shortener web service inside Docker cont
 
 ---
 
-![DevOps Cycle](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*fQzscfFtXcP_C7FVtOAeJQ.png)
+![DevOps Cycle](https://upload.wikimedia.org/wikipedia/commons/0/05/Devops-toolchain.svg)
 
 ---
 
