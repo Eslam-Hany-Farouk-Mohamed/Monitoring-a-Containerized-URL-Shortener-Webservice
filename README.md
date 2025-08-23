@@ -11,7 +11,7 @@ This project aims to build a simple URL Shortener web service inside Docker cont
 
 ## 👥 Team Members
 - Eslam Hany Farouk Mohamed (Team Leader)
-- Abdullah Wael Saeid Elshahaly
+- Abdallah Wael Saeid Elshahaly
 - Mariam Sayed Nabil Ali
 - Moataz Kamal Mohamed Hassan
 
