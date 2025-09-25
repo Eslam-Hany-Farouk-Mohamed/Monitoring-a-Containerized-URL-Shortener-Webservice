@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>URL Shortener</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, Arial, sans-serif; margin: 24px; }
+    form { display: flex; gap: 8px; max-width: 640px; }
+    input[type="url"] { flex: 1; padding: 10px; font-size: 16px; }
+    button { padding: 10px 16px; font-size: 16px; cursor: pointer; }
+    #result { margin-top: 16px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>URL Shortener</h1>
+  <form id="shortenForm">
+    <input id="urlInput" type="url" placeholder="https://example.com/very/long/link" required />
+    <button type="submit">Shorten</button>
+  </form>
+  <div id="result"></div>
+
+  <script>
+    document.getElementById("shortenForm").addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const longUrl = document.getElementById("urlInput").value.trim();
+      const resultEl = document.getElementById("result");
+      resultEl.textContent = "Working...";
+
+      try {
+        // Call Flask API explicitly on localhost:5000
+        const res = await fetch("http://127.0.0.1:5000/shorten", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ url: longUrl })
+        });
+        const data = await res.json();
+
+        if (res.ok) {
+          resultEl.innerHTML = `Short URL: <a href="${data.short_url}" target="_blank" rel="noopener">${data.short_url}</a>`;
+        } else {
+          resultEl.textContent = "Error: " + (data.error || "Unknown error");
+        }
+      } catch (err) {
+        resultEl.textContent = "Network error";
+      }
+    });
+  </script>
+</body>
+</html>
