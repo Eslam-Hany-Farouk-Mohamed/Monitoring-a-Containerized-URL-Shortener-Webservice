@@ -1,0 +1,5 @@
+[IT]
+192.168.126.137 ansible_user=eslam ansible_password=eslam ansible_become_password=eslam
+192.168.126.138 ansible_user=eslam2 ansible_password=eslam2 ansible_become_password=eslam2
+192.168.126.139 ansible_user=eslam3 ansible_password=eslam3 ansible_become_password=eslam3
+
