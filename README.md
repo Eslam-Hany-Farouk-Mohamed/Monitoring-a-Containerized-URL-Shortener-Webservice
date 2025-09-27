@@ -42,5 +42,5 @@ It will be monitored using *Prometheus* and *Grafana* to provide real-time perfo
 ---
 
 ## 🗓 Team Roles & Responsibilities
-https://drive.google.com/file/d/1SZXswL-vR4OzwPMR_kXk5fm5xs1xPihU/view?usp=sharing
+https://drive.google.com/file/d/1dbx1bt2JSEj_02ThQPtEMpVmApLomM7X/view?usp=sharing
 ---
