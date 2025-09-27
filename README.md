@@ -41,13 +41,6 @@ It will be monitored using *Prometheus* and *Grafana* to provide real-time perfo
 
 ---
 
-## 🗓 Project Plan
-The project will be executed over several phases:  
-
-- **Phase 1:** Define requirements and architecture.  
-- **Phase 2:** Build and containerize the URL Shortener service.  
-- **Phase 3:** Integrate Prometheus for monitoring metrics.  
-- **Phase 4:** Build Grafana dashboards for visualization.  
-- **Phase 5:** Final testing, documentation, and presentation.  
-
+## 🗓 Team Roles & Responsibilities
+https://drive.google.com/drive/folders/1PhMGylbN1qIbcoZPIMBETwRL-SGwRjcn?usp=sharing
 ---
